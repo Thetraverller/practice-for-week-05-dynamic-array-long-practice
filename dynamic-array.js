@@ -71,12 +71,12 @@ class DynamicArray {
   resize () {
 
     // Your code here
-    let resized = new Array(this.length * 2);
+    let resized = new Array(this.length * 2); //pointing to new mem/ array
     for (let i = 0; i < this.data.length; i++) {
         resized[i] = this.data[i];
     }
-    this.data = resized;
-    this.capacity = this.capacity*2;
+    this.data = resized;  //this.data => new Array(l*2)
+    this.capacity = this.capacity*2;  
   }
 
 }
